@@ -1,3 +1,4 @@
+
 <head>
   <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
   <script>
@@ -5,6 +6,7 @@
     OneSignal.push(function() {
       OneSignal.init({
           appId: "178f6ac7-8e8a-4f1e-923e-5bfb4f46b65a",
+        requiresUserPrivacyConsent: true,
         subdomainName:"YOUR_LABEL"/* The label for your site that you added in Site Setup mylabel.os.tc */
         notifyButton: {
           enable: true,
@@ -13,8 +15,7 @@
     });
   </script>
 </head>
+
 <body>
 <p>Hola</p>
 </body>
-
-
